@@ -1,0 +1,41 @@
+{
+  "name": "classified-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "keywords": [
+    "Node.js",
+    "Javascript",
+    "MongoDb",
+    "Socket.io",
+    "Mongoose"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.95.3",
+    "bull": "^4.16.5",
+    "cors": "^2.8.6",
+    "cryptr": "^6.4.0",
+    "dotenv": "^17.2.4",
+    "express": "^5.2.1",
+    "firebase-admin": "^13.6.1",
+    "moment": "^2.30.1",
+    "mongoose": "^9.2.1",
+    "morgan": "^1.10.1",
+    "multer": "^2.0.2",
+    "nodemon": "^3.1.11",
+    "socket.io": "^4.8.3",
+    "uuid": "^13.0.0"
+  },
+  "overrides": {
+    "qs": "^6.14.1",
+    "lodash": "^4.17.23",
+    "node-forge": "^1.3.3",
+    "jws": "^4.0.1"
+  }
+}

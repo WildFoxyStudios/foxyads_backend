@@ -1,0 +1,71 @@
+//express
+const express = require("express");
+const route = express.Router();
+
+//require client's route.js
+const tip = require("./tip.route");
+const faq = require("./faq.route");
+const blog = require("./blog.route");
+const subscriptionPlan = require("./subscriptionPlan.route");
+const featureAdPackage = require("./featureAdPackage.route");
+const reportReason = require("./reportReason.route");
+const category = require("./category.route");
+const banner = require("./banner.route");
+const user = require("./user.route");
+const verification = require("./verification.route");
+const purchaseHistory = require("./purchaseHistory.route");
+const country = require("./country.route");
+const state = require("./state.route");
+const city = require("./city.route");
+const attributes = require("./attributes.route");
+const setting = require("./setting.route");
+const adListing = require("./adListing.route");
+const adLike = require("./adLike.route");
+const adView = require("./adView.route");
+const block = require("./block.route");
+const report = require("./report.route");
+const adVideo = require("./adVideo.route");
+const chatTopic = require("./chatTopic.route");
+const chat = require("./chat.route");
+const idProof = require("./idProof.route");
+const auctionBid = require("./auctionBid.route");
+const review = require("./review.route");
+const follow = require("./follow.route");
+const notification = require("./notification.route");
+const videoView = require("./videoView.route");
+const adVideoLike = require("./adVideoLike.route");
+
+//exports client's route.js
+route.use("/tip", tip);
+route.use("/faq", faq);
+route.use("/blog", blog);
+route.use("/subscriptionPlan", subscriptionPlan);
+route.use("/featureAdPackage", featureAdPackage);
+route.use("/reportReason", reportReason);
+route.use("/category", category);
+route.use("/banner", banner);
+route.use("/user", user);
+route.use("/verification", verification);
+route.use("/purchaseHistory", purchaseHistory);
+route.use("/country", country);
+route.use("/city", city);
+route.use("/state", state);
+route.use("/attributes", attributes);
+route.use("/setting", setting);
+route.use("/adListing", adListing);
+route.use("/adLike", adLike);
+route.use("/adView", adView);
+route.use("/block", block);
+route.use("/report", report);
+route.use("/adVideo", adVideo);
+route.use("/chatTopic", chatTopic);
+route.use("/chat", chat);
+route.use("/idProof", idProof);
+route.use("/auctionBid", auctionBid);
+route.use("/review", review);
+route.use("/follow", follow);
+route.use("/notification", notification);
+route.use("/videoView", videoView);
+route.use("/adVideoLike", adVideoLike);
+
+module.exports = route;
